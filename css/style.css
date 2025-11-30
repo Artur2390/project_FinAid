@@ -1,0 +1,733 @@
+.container {
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 0 12px 0 12px;
+}
+
+header {
+    background: rgba(244, 248, 250, 1);
+}
+
+.header_wrapper {
+    display: flex;
+    padding-top: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_header {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 784px;
+}
+
+.menu_header_list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.header_list {
+    color: rgb(97, 99, 109);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header_list_exit {
+    color: rgb(38, 41, 49);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.exit {
+    width: 20px;
+    height: 20px;
+}
+
+.menu_exit {
+    display: flex;
+    gap: 8px;
+    padding: 9px 0;
+}
+
+.log_inovo {
+    background: rgb(244, 248, 250);
+    padding-top: 13px;
+    overflow: hidden;
+}
+
+.log_inovo_wrapper {
+    position: relative;
+    padding: 115px 0 144px 0;
+}
+
+.hexagono {
+    width: 1191.76px;
+    height: 1017.56px;
+}
+
+/* Свойство z-index в CSS отвечает за порядок наложения элементов на веб-странице. 
+Оно определяет, какой элемент окажется сверху, а какой — будет скрыт под ним. Чем выше значение z-index ,
+тем ближе к пользователю расположен элемент. */
+
+.img_1 {
+    position: absolute;
+    z-index: 1;
+    top: 17px;
+    left: 446px;
+}
+
+.form_text,
+.system {
+    position: relative;
+    z-index: 2;
+}
+
+.color_blue {
+    color: rgb(1, 118, 255);
+}
+
+.title_text {
+    font-family: RF Dewi Extended;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 67px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.par_1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(97, 99, 109);
+    max-width: 511px;
+}
+
+.color_dark {
+    color: rgb(63, 65, 74);
+    font-weight: bold;
+}
+
+.be_partner {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    padding: 16px 32px 16px 32px;
+    border-radius: 72px;
+    background: rgb(1, 118, 255);
+    max-width: 202px;
+}
+
+.be_partner :hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8;
+    padding: 16px 32px 16px 32px;
+    border-radius: 72px;
+    box-shadow: 0px 4px 20px 0px rgba(16, 109, 217, 0.5);
+    background: rgb(20, 113, 222);
+}
+
+.form_text {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.Text {
+    display: flex;
+}
+
+.system {
+    border-radius: 30px;
+    box-shadow: 0px 12px 32px 0px rgba(50, 73, 85, 0.1);
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 48px 40px 48px;
+    width: 100%;
+    max-width: 487px;
+    gap: 40px;
+}
+
+.login_sistem {
+    color: rgb(38, 41, 49);
+    font-family: RF Dewi Extended;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.system_2 {
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 20px 16px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 199, 207);
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    color: rgb(169, 171, 182);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 389px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.login :hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 8px 16px 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(97, 99, 109);
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 20px 16px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 199, 207);
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    color: rgb(169, 171, 182);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 389px;
+    width: 100%;
+}
+
+.password:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 8px 16px 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(97, 99, 109);
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+}
+
+.eye {
+    width: 100%;
+    height: 100%;
+}
+
+.write_password {
+    display: flex;
+    position: relative;
+    max-width: 389px;
+    width: 100%;
+}
+
+.img_2 {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+.recover {
+    display: inline-block;
+    color: rgb(159, 161, 173);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.recover:hover {
+    color: rgb(38, 41, 49);
+}
+
+.enter {
+    color: rgb(38, 41, 49);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 40px 16px 40px;
+    border: 1px solid rgb(1, 118, 255);
+    border-radius: 72px;
+    background: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 16px;
+}
+
+.enter :hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8;
+    padding: 16px 40px 16px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(1, 118, 255);
+    border-radius: 72px;
+    background: rgb(1, 118, 255);
+}
+
+.system_3_text {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(159, 161, 173);
+}
+
+.register {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(1, 118, 255);
+}
+
+.register :hover {
+    color: rgb(23, 82, 151);
+}
+
+.no_account {
+    display: flex;
+}
+
+/* repeat-x. Изображение повторяется только по горизонт. оси.
+
+свойство background-position устанавливает начальную позицию для каждого фонового изображения */
+
+.about_project {
+    background-image: url(../img/Bar\ chart.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    margin-top: 82px;
+}
+
+.about_project_wrapper {
+    padding-bottom: 167px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 95px;
+    gap: 40px;
+}
+
+.about_project_title {
+    color: rgb(38, 41, 49);
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.about_project_text {
+    display: flex;
+    max-width: 487px;
+    flex-direction: column;
+}
+
+.list {
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop {
+    width: 100%;
+    height: 100%;
+}
+
+.list_par_1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(97, 99, 109);
+}
+
+.color_dark_list {
+    color: rgb(63, 65, 74);
+    font-weight: bold;
+}
+
+.list_par_2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+    color: rgb(97, 99, 109);
+}
+
+.list_par_3 {
+    color: rgba(97, 99, 109, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+}
+
+.how_is_works {
+    background: rgba(244, 248, 250, 1);
+}
+
+.how_is_works_wrapper {
+    padding-top: 136px;
+}
+
+.how_is_works_title {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    width: 422px;
+    margin-bottom: 64px;
+}
+
+.color_works_title {
+    color: rgba(1, 118, 255, 1);
+}
+
+.sequence_of_work {
+    display: flex;
+    margin-bottom: 32px;
+    padding-top: 44px;
+    width: 1199.44px;
+    position: relative;
+}
+
+.regist_work_title {
+    color: rgba(38, 41, 49, 1);
+    font-family: RF Dewi Extended;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.regist_work_par {
+    color: rgba(97, 99, 109, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    width: 174px;
+}
+
+.group_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 104px;
+    position: relative;
+    margin-right: 30px;
+}
+
+/* position: absolute — это CSS-свойство, которое удаляет элемент из обычного потока документа и позволяет позиционировать
+его абсолютно относительно ближайшего позиционированного родительского элемента.
+
+CSS-свойство z-index определяет положение позиционированного элемента и его дочерних элементов или флекс-элементов по оси z. 
+Перекрывающие элементы с большим значением z-index будут накладываться поверх элементов с меньшим z-index.*/
+
+.vector_works {
+    position: absolute;
+    z-index: 2;
+    top: 290px;
+    left: 225px;
+}
+
+.group_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+    position: relative;
+    margin-right: 45px;
+}
+
+.regist_work_par_2 {
+    color: rgba(97, 99, 109, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    width: 257px;
+}
+
+.vector_works_2 {
+    position: absolute;
+    z-index: 2;
+    top: 265px;
+    right: 475px;
+}
+
+.group_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 165px;
+    position: relative;
+    margin-right: 50px;
+    left: 25px;
+}
+
+.regist_work_par_3 {
+    width: 205px;
+    color: rgba(97, 99, 109, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.vector_works_3 {
+    position: absolute;
+    z-index: 2;
+    top: 284px;
+    right: 196px;
+}
+
+.group_4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 78px;
+    gap: 87px;
+    position: relative;
+}
+
+.content_group_4 {
+    margin-left: 40px;
+}
+
+.regist_work_par_4 {
+    color: rgba(97, 99, 109, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    width: 211px;
+}
+
+.button_partner {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 16px 32px 16px 32px;
+    border-radius: 72px;
+    background: rgb(1, 118, 255);
+    max-width: 202px;
+}
+
+.button_partner :hover {
+    box-shadow: rgba(16, 109, 217);
+    background: rgb(20, 113, 222);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.about_bitcoin {
+    background: rgb(244, 248, 250);
+    padding-top: 144px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about_bitcoin_title {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title_blue_bitcoin {
+    color: rgba(1, 118, 255, 1);
+}
+
+.about_bitcoin_text {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: rgb(97, 99, 109);
+    max-width: 671px;
+    margin: 0 auto 56px;
+}
+
+.text_bitcoin_dark {
+    color: black;
+}
+
+.video_bitcoin {
+    margin-bottom: 144px;
+}
+
+/* CSS свойство background-position устанавливает начальную позицию для каждого фонового изображения. 
+    Положение относительно уровня положения, установленного background-origin. 
+    Если не ставить overflow явно или поставить visible, то содержимое отображается за границами блока.
+    Возможные значения
+
+    visible (по умолчанию)
+    hidden
+    scroll
+    auto*/
+
+.registration {
+    background: rgb(1, 118, 255);
+    overflow: hidden;
+    background-image: url(../img/Fr.13.png);
+    background-repeat: no-repeat;
+    background-position: 100% -60px;
+    background-size: 877px 748px;
+}
+
+.about_registration_wrapper {
+    padding: 48px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.registration_title {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    max-width: 821px;
+}
+
+.color_title_registration {
+    color: rgba(251, 220, 124, 1);
+}
+
+.registration_par {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+}
+
+.button_registration {
+    display: flex;
+    gap: 24px;
+}
+
+.reg_button {
+    width: 230px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8;
+    border-radius: 72px;
+    background: rgb(255, 255, 255);
+    padding: 16px 32px 16px 32px;
+    color: rgb(38, 41, 49);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.account_enter {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    align-self: center;
+}
+
+.registration_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

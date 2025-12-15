@@ -243,15 +243,7 @@ header {
 }
 
 .password:hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 16px 8px 16px 8px;
-    box-sizing: border-box;
     border: 1px solid rgb(97, 99, 109);
-    border-radius: 30px;
-    background: rgb(255, 255, 255);
 }
 
 .eye {
@@ -266,11 +258,16 @@ header {
     width: 100%;
 }
 
+/* Часто бывает необходимо каким-то образом трансформировать визуальное представление элемента (масштабировать, повернуть, переместить) и
+   при этом никак не затронуть соседние элементы в документе. Для подобных преобразований используется свойство transform.
+   Ссылка на сайт https://doka.guide/css/transform-function */
+
 .img_2 {
+    transform: translateY(-50%);
     display: flex;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 50%;
     width: 16px;
     height: 16px;
     background-color: rgb(255, 255, 255);
@@ -362,7 +359,6 @@ header {
     background-image: url(../img/Bar\ chart.png);
     background-position: bottom;
     background-repeat: repeat-x;
-    margin-top: 82px;
 }
 
 .about_project_wrapper {
@@ -447,7 +443,7 @@ header {
     font-weight: 400;
     line-height: 48px;
     text-align: left;
-    width: 422px;
+    max-width: 422px;
     margin-bottom: 64px;
 }
 
@@ -455,12 +451,17 @@ header {
     color: rgba(1, 118, 255, 1);
 }
 
+/* Свойство overflow-x управляет отображением содержания блочного элемента по горизонтали,
+    если контент целиком не помещается и выходит за область справа или слева  */
+
 .sequence_of_work {
     display: flex;
     margin-bottom: 32px;
     padding-top: 44px;
     width: 1199.44px;
     position: relative;
+    justify-content: space-between;
+    overflow-x: scroll;
 }
 
 .regist_work_title {
@@ -488,7 +489,6 @@ header {
     flex-direction: column;
     gap: 104px;
     position: relative;
-    margin-right: 30px;
 }
 
 /* position: absolute — это CSS-свойство, которое удаляет элемент из обычного потока документа и позволяет позиционировать
@@ -509,7 +509,6 @@ CSS-свойство z-index определяет положение позиц�
     flex-direction: column;
     gap: 95px;
     position: relative;
-    margin-right: 45px;
 }
 
 .regist_work_par_2 {
@@ -534,7 +533,7 @@ CSS-свойство z-index определяет положение позиц�
     flex-direction: column;
     gap: 165px;
     position: relative;
-    margin-right: 50px;
+
     left: 25px;
 }
 
@@ -637,10 +636,11 @@ CSS-свойство z-index определяет положение позиц�
 }
 
 .text_bitcoin_dark {
-    color: black;
+    color: rgba(38, 41, 49, 1);
+    font-weight: ;
 }
 
-.video_bitcoin {
+.vid_bitcoin {
     margin-bottom: 144px;
 }
 
@@ -730,4 +730,456 @@ CSS-свойство z-index определяет положение позиц�
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.partners_support {
+    background: rgba(244, 248, 250, 1);
+}
+
+.partners_support_wrapper {
+    padding-top: 166px;
+    padding-bottom: 100px;
+    background: url(../img/Asset\ 1\ 4.png);
+    background-repeat: no-repeat;
+    background-position: center 190px;
+}
+
+.partners_support_title {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.support_title_blue {
+    color: blue;
+}
+
+.par1_col_1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: right;
+    color: rgba(97, 99, 109);
+    margin-bottom: 75px;
+}
+
+.color_dark_par1 {
+    color: rgba(38, 41, 49, 1);
+}
+
+.partners_support_text {
+    display: flex;
+    justify-content: center;
+}
+
+.column_1 {
+    padding-top: 160px;
+    margin-right: 83px;
+}
+
+.partners_image {
+    margin-top: 56px;
+}
+
+.par2_col_1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: right;
+    color: rgba(97, 99, 109, 1);
+    margin-bottom: 73px;
+}
+
+.par3_col_1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: right;
+    color: rgba(97, 99, 109, 1);
+}
+
+.column_2 {
+    padding-top: 160px;
+}
+
+.par1_col_2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    color: rgba(97, 99, 109, 1);
+    margin-bottom: 75px;
+    margin-left: 64px;
+}
+
+.par2_col_2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    color: rgba(97, 99, 109, 1);
+    margin-bottom: 73px;
+    margin-left: 82px;
+}
+
+.par3_col_2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    color: rgba(97, 99, 109, 1);
+    margin-left: 64px;
+}
+
+.partners_studing {
+    background: rgb(244, 248, 250);
+    display: flex;
+    justify-content: center;
+    padding-top: 21px;
+    text-align: center;
+}
+
+.partners_studing_title {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.blue {
+    color: rgba(1, 118, 255, 1);
+}
+
+.video_bitcoin {
+    margin-top: 48px;
+    border-radius: 30px;
+}
+
+.answers_to_questions {
+    background: rgba(244, 248, 250, 1);
+}
+
+.answers_to_questions_wrapper {
+    padding-top: 144px;
+    padding-bottom: 120px;
+}
+
+.answers_to_questions_title {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.register_form {
+    display: flex;
+    align-items: flex-start;
+}
+
+.register_process {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    flex: 1 1;
+    max-width: 682px;
+}
+
+.register_question {
+    display: flex;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    padding: 24px;
+    background: rgba(255, 255, 255, 1);
+    justify-content: space-between;
+    color: rgba(38, 41, 49, 1);
+}
+
+.register_question_wrapper {
+    background: white;
+    padding: 0 24px 24px;
+    color: rgba(38, 41, 49, 1);
+}
+
+.line {
+    border: 1px solid rgb(220, 221, 229);
+    margin-bottom: 16px;
+}
+
+.register_wrapper_1 {
+    color: rgba(38, 41, 49, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+}
+
+.chevron_up {
+    color: rgba(97, 99, 109, 1);
+    max-height: 16px;
+}
+
+.chevron_down {
+    color: rgba(97, 99, 109, 1);
+    max-height: 16px;
+}
+
+.answer_wrapper {
+    padding-left: 25px;
+}
+
+.answer_wrapper_li {
+    color: rgba(38, 41, 49, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+}
+
+.question_form {
+    margin-top: 16px;
+}
+
+.register_question_1 {
+    display: flex;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    padding: 24px;
+    background: rgba(255, 255, 255, 1);
+    justify-content: space-between;
+    color: rgba(97, 99, 109, 1);
+}
+
+.feedback {
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0px 12px 32px 0px rgba(50, 73, 85, 0.1);
+    background: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 48px 40px 48px;
+    flex: 1 1;
+    max-width: 485px;
+}
+
+.part_1_title {
+    color: rgb(38, 41, 49);
+    font-family: RF Dewi Extended;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.par_part_1 {
+    color: rgba(97, 99, 109, 1);
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.part_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 20px 16px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 199, 207);
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    color: rgb(169, 171, 182);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.cell_number {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 199, 207);
+    border-radius: 30px;
+    padding: 0 20px;
+}
+
+.prefix {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgb(38, 41, 49);
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgb(169, 171, 182);
+    padding: 16px 20px 16px 0;
+    border: none;
+    border-radius: 30px;
+}
+
+.your_message {
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 199, 207);
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    color: rgb(169, 171, 182);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.send {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 40px;
+    border: 1px solid rgb(1, 118, 255);
+    border-radius: 72px;
+    background: white;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer_wrapper {
+    padding: 56px 0;
+}
+
+.footer_text {
+    display: flex;
+    margin-bottom: 59px;
+    justify-content: space-between;
+}
+
+.footer_copyright {
+    color: rgb(159, 161, 173);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
+
+.footer_text_li {
+    color: rgb(97, 99, 109);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer_par {
+    color: rgb(159, 161, 173);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
+
+.text_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.text_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.text_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.text_4 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 8px;
+}
+
+.text_5 {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+
+.footer_part_1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.footer_info {
+    color: rgba(38, 41, 49, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
 }
